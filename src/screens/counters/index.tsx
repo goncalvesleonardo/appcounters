@@ -1,12 +1,15 @@
 import React from 'react';
-import {Text} from 'react-native';
-
+import Header from '../../components/Header';
+import Counter from '../../components/Counter';
 import {Container} from './styles';
+
+const title = 'Counters';
 
 const Counters = () => {
   return (
     <Container>
-      <Text>Counters</Text>
+      <Header title={title} />
+      <Counter title="Counter 1" value={2000} />
     </Container>
   );
 };

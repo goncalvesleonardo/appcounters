@@ -1,11 +1,28 @@
 import React from 'react';
-import {Text} from 'react-native';
+import CounterConfig from '../../components/CounterConfig';
+import Header from '../../components/Header';
+
+import {
+  Container,
+  ContainerCountersConfig,
+  AddCounter,
+  TextAddCounter,
+} from './styles';
+
+const title = 'Config';
 
 const Config = () => {
   return (
-    <>
-      <Text>Counters</Text>
-    </>
+    <Container>
+      <Header title={title} />
+      <AddCounter>
+        <TextAddCounter>Add Counter</TextAddCounter>
+      </AddCounter>
+      <ContainerCountersConfig>
+        <CounterConfig />
+        <CounterConfig />
+      </ContainerCountersConfig>
+    </Container>
   );
 };
 
